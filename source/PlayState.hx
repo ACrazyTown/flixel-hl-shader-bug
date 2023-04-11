@@ -29,8 +29,7 @@ class PlayState extends FlxState
 
 		// Create shader and apply it to cam
 		shaderCam.setFilters([new ShaderFilter(new PanoramicDistortionShader())]);
-		office.cameras = [shaderCam];
-
+		office.cameras = [shaderCam]; // <--- Comment and uncomment this to test the effect. Leaving it uncommented removes any black spots from substates
 	}
 
 	var _t:Bool = false;
